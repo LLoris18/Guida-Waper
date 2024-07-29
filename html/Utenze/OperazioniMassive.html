@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Operazioni Massive</title>
+</head>
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h1>Operazioni Massive sulle utenze</h1>
+            <p>
+                Il caricamento massivo delle utenze non è l'unica operazione che può essere svolta in maniera massiva sulle utenze.
+                Nella parte superiore della schermata delle utenze precedentemente vista potremmo notare altri tasti di azione:
+                <img src="azionimass.png" width="900" height="150px" class="rounded mx-auto d-block">
+                I primi due tasti sono stati già visti all'interno della sezione Caricamento Manuale delle Utenze, procediamo quindi in ordine con gli altri tre.
+            </p>
+            <h3>Sincronizzazione con Excel</h3>
+            <p>
+                La sincronizzazione con Excel è molto utile nei casi in cui vadano effettuati aggiornamenti sull'anagrafica in maniera massiva. La sincronizzazione prende in input lo stesso file excel utilizzato per il caricamento massivo; la stessa impostazione 
+                della pagina risulta praticamente uguale a quella del caricamento massivo delle utenze.
+                <img src="sincronizza.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+            </p>
+            <p>
+                Preso in ingresso il nuovo file caricato, la sincronizzazione svolge un'operazione di confronto tra il file appena caricato e l'attuale database in uso, comportandosi nel seguente modo:
+                <ul>
+                    <li>Se un'utenza è presente nel nuovo file ma non nel vecchio verrà creata come nuova</li>
+                    <li>Se un'utenza non è presente nel nuovo file ma è presente nel vecchio quest'ultima verrà sospesa</li>
+                    <li>Se un'utenza è presente nel nuovo file ed è presente anche nel vecchio database allora tale utenza rimarrà attiva</li>
+                </ul>
+            </p>
+            <h3>Sospendi con Excel</h3>
+            <p>
+                Il nome della funzione risulta piuttosto esplicativo dell'azione che verrà eseguita. In questo caso il file excel che utilizzeremo prenderà in ingresso una sola colonna significativa: il codice utenza.
+            </p>
+            <h3>Modifica Info</h3>
+            <p>
+                L'ultima funzione massiva della pagina utenze risulta utile qualora ci fossero da inserire massivamente o aggiornare informazioni personali dell'anagrafica come nomi, cognomi o indirizzi.
+                Il file excel che prenderà in ingresso tale funzione conterrà una sola colonna obbligatoria, quella del codice utenze; tutte le altre colonne saranno opzionali e modificabili.
+                <img src="modificainfomassivo.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+                Terminata la compilazione del file basterà caricarlo come visto per le altre funzioni; anche al termine di questa operazione riceveremo una notifica via mail di successo o di presenza di errori.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

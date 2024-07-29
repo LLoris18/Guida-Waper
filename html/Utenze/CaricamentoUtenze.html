@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <title>Il caricamento manuale delle utenze</title>
+  </head>
+  <body>
+    <div class="card-body">
+      <h1>Il caricamento manuale delle Utenze</h1>
+      <p>
+        Una volta terminata la creazione delle categorie utenza, abbiamo il
+        necessario per poter procedere al caricamento delle utenze all'interno
+        della piattaforma. Nello specifico verrà illustrato il caricamento in
+        due diverse strategie, quella manuale e quella massiva. Per procedere al
+        caricamento delle utenze è necessario recarsi nella pagina
+        <b>Utenze</b> dalla Sidebar. Una volta giunti nella pagina potremmo
+        notare una prima parte della pagina dedicata ad operazioni da svolgere
+        sulle utenze, come per esempio il caricamento, la sincronizzazione o
+        l'esportazione; 
+        <img src="utenzetop.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        mentre nella seconda parte della pagina potremmo notare
+        invece la vera e propria tabella di visualizzazione delle utenze
+        caricate nella piattaforma. 
+        <img src="utenzebottom.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        Per accedere alla creazione di una singola
+        utenza l'amministratore dovrà fare click sul tasto verde <b>Nuova</b>.
+      </p>
+      <p>Una volta aperta la pagina ci troveremo davanti alla possibilità di compilare
+        diversi campi.
+        <img src="nuovautenzatop.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        I primi campi che incontreremo, quelli al di sotto della sezione <b>Consumers Create</b> corrispondono ad una serie di informazioni
+        dedicate strettamente all'utenza, dove per utenza si intende l'immobile, il nucleo familiare. A sostegno di questa tesi, nell'imamgine proposta
+        è possibile vedere come siano richieste informazioni relative al quartiere di residenza,l'indirizzo o il civico.
+        Andando in ordine, i primi 4 campi sono i più significativi e obbligatori:
+        <ul>
+            <li>Codice Utenza</li>
+            <li>Pairing Code</li>
+            <li>Storing Category</li>
+            <li>Categoria Utenza</li>
+        </ul>
+        Il campo codice utenza è un campo che dovrà contenere un codice univoco che identificherà, in maniera univoca,
+        una singola utenza; in questo campo potrebbe per esempio essere inserito il codice dell'utenza TARI.
+        Il campo pairing code, facendo riferimento sia alla guida di Waper app e alla sezione sulla Storing Category, indica il codice di pareggio del nucleo familiare;
+        tale codice può essere generato in maniera casuale oppure può coincidere con il codice dell'utenza.
+      </p>
+      <p>
+        Altre informazioni, come il saldo, la data attivazione tassa e data cessazione tassa, sono campi opzionali che servono per arricchire il quantitativo di informazioni a disposizione per una specifica utenza.
+      </p>
+      <p>
+        Nella parte inferiore della pagina invece potremmo notare la compilazione dei campi dedicati agli <b>utenti</b>, ovvero i componenti di un determinato nucleo familiare, e quindi, di una determinata utenza.
+        <img src="nuovautenzabottom.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        Ogni utenza può possedere più utenti al proprio interno; in questa pagina di registrazione viene proposta l'aggiunta di due utenti ad un'utenza, tuttavia è possibile aggiungerne anche di più.
+        Per ciascun utente sarà obbligatorio indicare:
+        <ul>
+            <li>Codice di Accesso, ovvero il codice utilizzato per accedere all'ecoisola/distributore</li>
+            <li>Nome</li>
+            <li>Cognome</li>
+        </ul>
+        Gli altri campi presenti, come nel caso dell'utenza servono ad aggiungere informazioni aggiuntive per un singolo utente. <b>N.B</b>E' consigliato inserire almeno uno tra indirizzo mail e numero di telefono per l'utente se si ha a disposizione tali informazioni.
+      </p>
+      <p>
+        Scorrendo in fondo alla pagina potremmo ritrovare un'opzione già vista all'interna della sezione delle Storing Category, ovvero la possibilità di consentire o meno l'accesso ad una determinata ecoisola per quel singolo utente; l'accesso può essere regolato anche per i distributori di sacchetti qualora fossero presenti.
+      </p>
+      <p>
+        Terminata la compilazione di tutti i campi basterà fare click sul tasto verde <b>Registra</b> per aggiungere una nuova utenza alla piattaforma
+      </p>
+      <h1>Il caricamento massivo delle Utenze</h1>
+      <p>
+        Abbiamo visto precedentemente come caricare una singola utenza; tuttavia, in caso dovessimo caricare un elenco numeroso di Utenze
+        l'operazione appena vista risulta piuttosto onerosa. Motivo per il quale Waper Web mette a disposizione una funzione di caricamento massivo basata sull'utilizzo di file excel o csv.
+        Tornando nella schermata delle <b>Utenze</b>, cliccando l'apposito tasto dalla Sidebar, basterà recarsi sul tasto <b>Import New Consumers</b> e dal menù a tendina che verrà proposto selezionare o la voce .xlsx per file excel con intestazione o .csv per file privi di intestazione.
+        Scelta la dovuta preferenza, l'amministratore si troverà davanti alla seguente finestra:
+        <img src="importnewconsumers.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        Le tre opzioni che vengono proposte:
+        <ul>
+            <li>Random Pairing Code</li>
+            <li>Custom Pairing Code</li>
+            <li>Pairing Code = Consumer Code</li>
+        </ul>
+        indicano le tre modalità con le quali può essere generato il codice di pareggio del nucleo familiare da utilizzare sull'app, ovvero rispettivamente, in maneira casuale, in maniera personalizzata o copiando il codice inserito nella colonna codice utenze.
+    </p>
+    <p>
+        La riga sottostante alla scelta appena espressa suggerisce di selezionare il proprio file excel o in alternativa di scaricare l'apposito modello. Il caricamento massivo mediante file excel richiede che
+        i dati siano organizzati all'interno di un file excel opportunamente configurato (proprio il modello che può essere scaricato).
+        <img src="excel.png" width="1100px" height="550px" class="rounded mx-auto d-block">
+        In tale modello possiamo notare le prime tre colonne di colore diverso dalle altre; tali colonne indicano i dati obbligatori ovvero codice utenza, codice di accesso all'ecoisola/distributore e la categoria utenza (<b>non la storing category!</b>).
+        Tutti gli altri campi presenti nel modello excel indicano tutte le informazioni che abbiamo precedentemente descritto come per esempio: nome, cognome, indirizzo, civico,... .
+    </p>
+    <p>
+        Terminata la compilazione del file excel basterà tornare sul software e caricare il file appena compilato nell'apposita area vista precedentemente e premere il tasto verde <b>Registra</b>. Al termine della procedura di caricamento verrà inviata una mail all'indirizzo di posta elettronica dell'amministratore con il risultato dell'operazione appena eseguita.
+    </p>
+    </div>
+  </body>
+</html>

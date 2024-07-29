@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Categorie Utenza</title>
+</head>
+<body>
+    <div class="card-body">
+        <h1>Le Categorie Utenza</h1>
+        <p>
+            Come detto in precedenza, a partire dalle storing categories si diramano le diverse Categorie Utenza. Una categoria utenza rappresenta un gruppo all'interno del quale inserire utenti che
+            condividono uno stesso set di regole. 
+            Recandoci nell'apposita sezione presente sulla Sidebar, <b>Categorie Utenza</b>, ci verrà presentata una schermata di riepilogo molto simile a quella vista precedentemente.
+            <img src="usercategories.png" width="1100px" height="650px" class="rounded mx-auto d-block">
+        </p>
+        <p>
+            Anche in questo caso sarà presente la possibilità di aggiungere una nuova Categoria Utenza semplicemente cliccando sul tasto verde <b>+ Add New</b>. In questo caso i campi da compilare saranno:
+            <ul>
+                <li>Nome Categoria Utenza</li>
+                <li>Codice Categoria Utenza</li>
+                <li>Colore</li>
+                <li>Storing Category di appartenenza </li>
+                <li>Visualizzazione sull'app</li>
+                <li>Descrizione</li>
+            </ul>
+            Di questi campi non tutti risultano obbligatori; per una corretta impostazione basterebbe scegliere il nome della categoria, la sua storing category di appartenenza e la possibilità di visualizzazione della categoria stessa sull'app o meno.            
+            <img src="categoriescreate.png"  width="1100px" height="650px" class="rounded mx-auto d-block">
+        </p>
+        <p>
+            Le categorie utenze sono molto utili per definire regole che valgono per un determinato gruppo di utenti, come per esempio limiti al conferimento, kit di sacchetti a disposizione e limiti all'erogazione di sacchetti a disposizione.
+            Possiamo vedere questi tre concetti espressi nelle tre tabelle nella parte inferiore della pagina:
+            <br>
+            <img src="tab1.png" width="500" height="300" class="img-fluid rounded">
+            <img src="tab2.png" width="500" height="300" class="img-fluid rounded">
+            <img src="tab3.png" width="500" height="300" class="img-fluid rounded">
+        </p>
+        <p>
+            Nella prima tabella (Foto 1) l'amministratore potrà impostare eventuali limiti al conferimento. Tali limiti sono espressi su ogni bocchetta, per ogni categoria di rifiuto. Supponendo l'esempio di un limite annuale di 5 conferimenti per ogni categoria di rifiuto, la tabella dovrebbe essere compilata nel seguente modo:
+            <ul>
+                <li>Attivare il flag sulla categoria al quale verrà applicato il limite (Colonna #)</li>
+                <li>Impostare il numero giorni 365 nella colonna numero giorni</li>
+                <li>Impostare il valore 5 nella colonna valore massimo </li>
+            </ul>
+            In questo modo il limite sarà correttamente impostato
+        </p>
+        <p>
+            Nella seconda tabella (Foto 2), nel caso in cui nel proprio comune siano presenti distributori di sacchetti, l'amministratore può impostare quali kit verranno forniti a quella data categoria dalla macchina.
+            Nella colonna # sarà possibile indicare se il rotolo di sacchetti di quella categoria sarà fornito o meno; nelle altre due colonne avremo la possibilità di indicare se il rotolo verrà fornito dalla macchina a pagamento e quale sarà il suo prezzo.
+        </p>
+        <p>
+            Nell'ultima tabella (Foto 3), sempre nel caso in cui nel proprio comune siano presenti distributori di sacchetti, l'amministratore potrà, analogamente a quanto spiegato per i limiti al conferimento (Vedi Tabella 1), impostare dei limiti al numero di rotoli di sacchetti erogati dalla macchina.
+        </p>
+        <p>
+            Terminata l'impostazione delle eventuali preferenze sui limiti di conferimento, si potrà registrare la nuova categoria di utenza semplicemente cliccando sul tasto blu in fondo alla pagina <b>+Registra</b>.
+        </p>
+    </div>
+</body>
+</html>
